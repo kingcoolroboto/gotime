@@ -1,1 +1,44 @@
-const d=p;(function(H,P){const I=p,A=H();while(!![]){try{const l=-parseInt(I(0x181))/(-0x15e9+0x4ca+-0x448*-0x4)+-parseInt(I(0x16d))/(0x11*-0x5e+0x1*0x1e2f+-0x17ef)*(parseInt(I(0x170))/(-0xa2b*0x1+0x1055+0x9*-0xaf))+-parseInt(I(0x17e))/(0x1517*-0x1+0x7*-0x3f9+0x30ea)*(-parseInt(I(0x194))/(0xb30+0x6*-0x511+0x9*0x223))+-parseInt(I(0x173))/(0x185b+-0x8e7+-0xf6e)*(parseInt(I(0x171))/(0x24d7+-0x14*0x7b+-0x1b34))+parseInt(I(0x191))/(0x59b*-0x1+-0xb86+0x1129)*(-parseInt(I(0x186))/(0x1a6a+-0x42d*0x3+0x6ed*-0x2))+parseInt(I(0x16e))/(-0x761+-0x30*-0x38+-0x315)*(-parseInt(I(0x183))/(0x1655+-0x2503+0xeb9))+parseInt(I(0x175))/(0x6fd*0x3+0x20ef*0x1+0x35da*-0x1);if(l===P)break;else A['push'](A['shift']());}catch(U){A['push'](A['shift']());}}}(k,-0xf20b+0x45b9d+0x25d));function p(H,P){const A=k();return p=function(l,U){l=l-(0x5c*-0x3e+0x5*-0x123+0x1*0x1d62);let s=A[l];return s;},p(H,P);}function k(){const K=['getElementById','div','json','\x27)\x22\x20>Add\x20to\x20Cart</button>\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22display:flex;gap:5px\x22\x20>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20x-data=\x22{\x20open:\x20false\x20}\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20\x20class=\x22button\x22\x20@click=\x22open\x20=\x20!\x20open\x22\x20>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20More\x20Details\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button\x20>\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20\x20x-show=\x22open\x22\x20@click.outside=\x22open\x20=\x20false\x22\x20\x20>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22produckdetails\x22\x20id=\x22ppop\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<iframe\x20id=\x22iframe\x22\x20style=\x22width:100%;height:100%;border:none\x22\x20src=\x22./product.html?Use_Id=\x27','279792pIjTAR','products.json','classList','2175BKGOVX','innerHTML','appendChild','21668mDaQOv','20pskiDO','toLocaleString','21EnHoPY','7TRMIcb',';\x22\x20>On\x20Sale</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20width=\x22200px\x22\x20height=\x22200px\x22\x20src=\x22','288852AUUGOf','createElement','8185488hecXHD','products','\x22\x20alt=\x22','Error\x20loading\x20products.','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22onsale\x22\x20style=\x22display:','catch','\x27,\x27','then','product','1924UgmvCP','carttotal','setItem','52456hsdFog','grid','582835nEQMbV','true','none','99iDpIJF','deals','\x27\x22\x20></iframe>\x27\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20\x20class=\x22button\x22\x20onclick=\x22addtocart(\x27','name','Error\x20fetching\x20products:','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3>'];k=function(){return K;};return k();}const services=[];sessionStorage[d(0x180)](d(0x176),services),totalcart=0x174d+-0xbf1*0x1+-0x2d7*0x4,carttotal=document[d(0x18c)](d(0x17f)),carttotal[d(0x16b)]='R'+totalcart,fetch(d(0x192))[d(0x17c)](H=>H[d(0x18e)]())[d(0x17c)](H=>{const V=d;if(H&&H[V(0x176)]){const P=document[V(0x18c)](V(0x187));H['products']['forEach'](A=>{const w=V;if(A['G']===w(0x184)){const l=document[w(0x174)](w(0x18d));l[w(0x193)]['add'](w(0x17d)),l['innerHTML']=w(0x179)+(A['G']===w(0x184)?w(0x182):w(0x185))+w(0x172)+A['x']+w(0x177)+A[w(0x189)]+w(0x18b)+A[w(0x189)]+'</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22Price\x22>\x20R'+A['D'][w(0x16f)]('en')+w(0x190)+A['id']+w(0x188)+A[w(0x189)]+w(0x17b)+A['D']+w(0x17b)+A['x']+w(0x18f),P[w(0x16c)](l);}});}else document[V(0x18c)](V(0x176))['innerHTML']=V(0x178);})[d(0x17a)](H=>console['error'](d(0x18a),H));
+    const services = [];
+    sessionStorage.setItem("products",services);  
+    totalcart = 0 ;
+    carttotal=document.getElementById("carttotal");
+    carttotal.innerHTML="R" + totalcart;
+    fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                if (data && data.products) {
+                    const deals = document.getElementById('deals');
+                    data.products.forEach(product => {
+                    if (product.onsale === "true") {
+                        const dealsDiv = document.createElement('div');
+                        dealsDiv.classList.add('product');
+
+                        dealsDiv.innerHTML = `
+                            <p class="onsale" style="display:${product.onsale === "true" ? "grid" : "none"};" >On Sale</p>
+                            <img width="200px" height="200px" src="${product.mainpic}" alt="${product.name}">
+                            <h3>${product.name}</h3>
+                            <p class="Price"> R${(product.prise).toLocaleString('en')}</p>
+                          <div style="display:flex;gap:5px" >
+                            <div x-data="{ open: false }">
+                            <button  class="button" @click="open = ! open" >
+                            More Details 
+                            </button > 
+                            <div  x-show="open" @click.outside="open = false"  >
+                               <div class="produckdetails" id="ppop">
+                                  <iframe id="iframe" style="width:100%;height:100%;border:none" src="./product.html?Use_Id='${product.id}'" ></iframe>' 
+                               </div>
+                            </div>
+                            </div>
+                          <button  class="button" onclick="addtocart('${product.name}','${product.prise}','${product.mainpic}')" >Add to Cart</button> 
+                          </div>
+                        `;
+
+                        deals.appendChild(dealsDiv);
+                       }
+                    });
+                } else {
+                    document.getElementById('products').innerHTML = "Error loading products.";
+                }
+            })
+            .catch(error => console.error('Error fetching products:', error));
+        // Fetch the JSON file
