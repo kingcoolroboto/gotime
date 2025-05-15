@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&family=Smooch+Sans:wght@100..900&family=Zen+Dots&display=swap');
+h1,h2,h3,p{
+margin:0;
+}
+body {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  color: #FFFFFF;
+  overflow-x: hidden;
+font-family: "Smooch Sans", sans-serif;
+font-size:1.5em;
+}
+.display{
+  display:grid;
+}
+.destop{
+display:none;
+}
+
+.logo {
+  border:1.9px solid #00fe3d;
+  border-radius:6px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  background: #2b3336;
+  padding: 0 40px 0 20px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  z-index:9;
+}
+.menubutton:hover ,.cart:hover {
+border: 3px solid #f00;
+  color: #FFD700;
+  cursor: pointer;
+}
+.cart {
+display:flex;
+min-width: 178px;
+justify-content: space-between;
+}
+.menubutton ,.cart {
+  background: #000;
+  border: 2px solid #00FE3D;
+  color: #0F9;
+  font-family: "Audiowide", sans-serif;
+  font-size: 1em;
+  padding: 3px;
+  border-radius: 4px;
+}
+.button:hover {
+font-size: 0.8em;
+  background: #7099c4;
+  color: #0f4260;
+  cursor: pointer;
+}
+
+.button,.cheakout {
+  background: #64b3d0;
+  border: none;
+  color: #0a5275;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-size: 0.7em;
+  padding: 3px;
+  border-radius: 4px;
+  border: 2px solid #297895;
+  display: grid;
+  place-items: center;
+}
+.hero {
+background: #2b3336 url(https://i.imghippo.com/files/kTY4973MBU.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 320px;
+display: grid;
+place-items: center;
+margin-top:100px;
+}
+.welcome {
+width: 300px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background: #00000080;
+  padding: 10px;
+  filter: drop-shadow;
+  border-radius: 5px;
+  margin: 20px;
+  translate: 53% 0;
+}
+.contact {
+background: #000 url(https://i.imghippo.com/files/XL1003GXY.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: contain;
+height:500px;
+}
+
+.story {
+  background: #2b3336;
+}
+
+.center {
+display:grid;
+place-items:center;
+text-align:center;
+}
+.note {
+  background: #2b3336c4;
+  padding: 20px;
+  color: #f4e1d4;
+  border-radius: 10px;
+  border: 5px solid #e0e0e0;
+}
+.day {
+margin-top:100px
+}
+.onsale {
+  background: #00FE3D8C;
+  font-size: 1.5em;
+  padding: 3px;
+  border-radius: 20px 0 20px 0;
+  margin: 0;
+  translate: -116px -181px;
+  position: absolute;
+}
+.product {
+  width: 300px;
+  height: 391px;
+  background: rgb(255,255,255); 
+background: linear-gradient(180deg, rgba(255,255,255,1) 1%, rgba(255,255,255,1) 72%, #2b3336 82%, #2b3336 84%, rgba(0,0,0,0) 100%);
+  color: #000;
+  padding: 10px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+}
+.products, .deals{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.products { margin-bottom:100px}
+.Price {
+  margin: 0;
+font-family: "Audiowide", sans-serif;
+  font-size: 1.5em;
+  width: 100%;
+  font-weight: bold;
+  color: #FFF;
+} 
+.hidden{display:none;}
+.block {display:block}
+
+.produckdetails {
+ position:fixed;
+ top:100px;
+ right:10%;
+ width:80%;
+ height:80%;
+ z-index:10;
+}
+
+
+.menubox {
+  gap: 5px;
+  display: grid;
+  position: fixed;
+  position: absolute;
+  top: 76px;
+  right: 40px;
+  width: 111px;
+  z-index: 90;
+}
+
+
+.cartbox {
+  position: fixed;
+  top: 75px;
+  right: 20px;
+  width: 660px;
+  height: 300px;
+  z-index: 90;
+  background: #000;
+  border: 2px solid #00FE3D;
+  border-radius: 6px;
+}
+.add {
+width: 25px;
+  height: 25px;
+  background: #2b3336;
+  border: none;
+  display: grid;
+  place-items: center;
+}
+.item {
+display: flex;
+  margin: 10px;
+  gap: 10px;
+  align-items: center;
+}
+.flex {
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+}
+.amount {
+  width: 100px;
+  text-align: right;
+}
+.cartname {
+  width: 60%;
+  overflow: auto;
+  height: 1em;
+}
+.fcheakout {
+position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display:flex;
+  gap: 10px;
+}
+/* max-width: 768px */
+@media (max-width: 480px){
+.menu {
+padding:0;
+justify-content: center;
+gap:5px;
+}
+.display{
+  display:none;
+}
+.produckdetails{
+  width: 100%;
+  height: 90%;
+  left: 0;
+}
+
+.products, .deals {padding:0}
+.product {padding:0}
+.item {
+display:grid;
+}
+
+.cartbox {
+  width: 226px;
+  height: 377px;
+  right: 0px;
+}
+
+.cheakout{
+scale: 0.9;
+  translate: 14px 0px;
+}
+.h33{ font-size: 1em;}
+.destop{
+display:grid;
+place-items: center;
+}
+
+.welcome {
+  translate: 0;
+  place-items: initial;
+  margin:0;
+  padding:0;
+}
+
+.note {
+  background: #000000c4;
+  padding: 20px;
+  color: #2cff00;
+  border:none;
+}
+
+.onsale{translate: -107px -171px;}
+
+.contact {
+  height:223px;
+}
+.products, .deals{
+  justify-content: center;
+}
+}
