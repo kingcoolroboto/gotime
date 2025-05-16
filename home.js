@@ -25,7 +25,7 @@
                             </button > 
                             <div  x-show="open" @click.outside="open = false"  >
                                <div class="produckdetails" id="ppop">
-                                  <iframe id="iframe" style="width:100%;height:100%;border:none" src="./product.php?Use_Id='${product.id}'" ></iframe>' 
+                                  <iframe id="iframe" style="width:100%;height:100%;border:none" src="./product.html?Use_Id=${product.id}" ></iframe>' 
                                </div>
                             </div>
                             </div>
