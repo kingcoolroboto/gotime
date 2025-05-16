@@ -1,1 +1,182 @@
-_0x3430ba;};return _0x3b1c();}function removeProductByName(_0x16105f){const _0x2eac6e=_0x38fb,_0x1b145a={'mHVhQ':'products','BZeJR':_0x2eac6e(0xef),'qnOlW':function(_0x4aa24b){return _0x4aa24b();}},_0x1df21a=sessionStorage['getItem'](_0x1b145a[_0x2eac6e(0xc0)]);if(!_0x1df21a)return;let _0x1111b1;try{_0x1111b1=JSON[_0x2eac6e(0xf0)](_0x1df21a);}catch(_0x262f68){console[_0x2eac6e(0xe0)](_0x1b145a[_0x2eac6e(0xeb)],_0x262f68);return;}const _0xd9a565=_0x1111b1[_0x2eac6e(0xf7)](_0x159242=>_0x159242[_0x2eac6e(0xe2)]!==_0x16105f);sessionStorage[_0x2eac6e(0xea)](_0x1b145a[_0x2eac6e(0xc0)],JSON[_0x2eac6e(0xc8)](_0xd9a565)),_0x1b145a[_0x2eac6e(0xc9)](updatetrollie),_0x1b145a['qnOlW'](updateCartTotal);}function _0x38fb(_0xfb28d3,_0x320227){const _0x3b1cec=_0x3b1c();return _0x38fb=function(_0x38fb7f,_0x2590ca){_0x38fb7f=_0x38fb7f-0xb6;let _0x4268b7=_0x3b1cec[_0x38fb7f];return _0x4268b7;},_0x38fb(_0xfb28d3,_0x320227);}function reduceProductQuantityByName(_0x543e63){const _0x4b3cf5=_0x38fb,_0x133fa9={'PgsIN':_0x4b3cf5(0xbe),'EocPP':'Invalid\x20JSON\x20in\x20sessionStorage:','KyCOd':function(_0x52b7ff){return _0x52b7ff();}},_0x455c3a=sessionStorage[_0x4b3cf5(0xfb)](_0x133fa9[_0x4b3cf5(0xc3)]);if(!_0x455c3a)return;let _0x17337c;try{_0x17337c=JSON['parse'](_0x455c3a);}catch(_0x23457a){console[_0x4b3cf5(0xe0)](_0x133fa9[_0x4b3cf5(0xf5)],_0x23457a);return;}const _0x278807=_0x17337c[_0x4b3cf5(0xe4)](_0x36fd59=>{const _0x29a474=_0x4b3cf5;if(_0x36fd59[_0x29a474(0xe2)]===_0x543e63)return{..._0x36fd59,'qt':_0x36fd59['qt']-0x1};return _0x36fd59;})['filter'](_0x519732=>_0x519732['qt']>0x0);sessionStorage[_0x4b3cf5(0xea)](_0x133fa9[_0x4b3cf5(0xc3)],JSON[_0x4b3cf5(0xc8)](_0x278807)),_0x133fa9[_0x4b3cf5(0xdf)](updatetrollie),updateCartTotal();}function addtocart(_0x564402,_0x43153b,_0x1fc18c){const _0x288419=_0x38fb,_0x402c5f={'zpraJ':_0x288419(0xbe),'oBxSj':function(_0x27319f){return _0x27319f();},'AqGLo':function(_0x38d49b){return _0x38d49b();}},_0x451a94=sessionStorage[_0x288419(0xfb)](_0x402c5f[_0x288419(0xcb)]);let _0x2cb717=[];if(_0x451a94)try{_0x2cb717=JSON[_0x288419(0xf0)](_0x451a94);}catch(_0xeafa46){console[_0x288419(0xe0)]('Invalid\x20JSON\x20in\x20sessionStorage:',_0xeafa46);}const _0x19d9d9=_0x2cb717[_0x288419(0xc1)](_0x43920f=>_0x43920f[_0x288419(0xe2)]===_0x564402&&_0x43920f[_0x288419(0xd0)]===_0x43153b);_0x19d9d9?_0x19d9d9['qt']+=0x1:_0x2cb717[_0x288419(0xd1)]({'Name':_0x564402,'Price':_0x43153b,'img':_0x1fc18c,'qt':0x1}),sessionStorage['setItem'](_0x402c5f['zpraJ'],JSON[_0x288419(0xc8)](_0x2cb717)),_0x402c5f
+// merg ---------------------------------------------------------------------
+function mergeAndDeduplicateProductsFromSession() {
+            // Read raw products JSON string from sessionStorage
+            const raw = sessionStorage.getItem("products");
+            if (!raw) {
+              console.warn("No products found in sessionStorage.");
+              return [];
+            }
+
+            let products;
+            try {
+              products = JSON.parse(raw);
+            } catch (e) {
+              console.error("Failed to parse products from sessionStorage:", e);
+              return [];
+            }
+
+            // Merge duplicates and sum `qt`
+            const map = new Map();
+            products.forEach(product => {
+              const key = `${product.Name}|${product.Price}`;
+              if (map.has(key)) {
+                map.get(key).qt += product.qt;
+              } else {
+                map.set(key, { ...product });
+              }
+            });
+
+            const deduplicated = Array.from(map.values());
+
+            // Optional: Save back to sessionStorage
+            sessionStorage.setItem("products", JSON.stringify(deduplicated));
+
+            return deduplicated;
+          }
+// update cart total----------------------------------------------------------
+        function updateCartTotal() {
+          const raw = sessionStorage.getItem("products");
+          let products = [];
+
+          if (raw) {
+            try {
+              products = JSON.parse(raw);
+            } catch (e) {
+              console.error("Invalid JSON in sessionStorage:", e);
+              return;
+            }
+          }
+
+          // Calculate total
+          const total = products.reduce((sum, product) => {
+            return sum + (product.Price * product.qt);
+          }, 0);
+
+          // Format and update the DOM
+          const totalElement = window.parent.document.getElementById("carttotal");
+          if (totalElement) {
+            totalElement.textContent = total.toLocaleString('en', {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2
+            });
+          } else {
+            console.warn('Element with id="carttotal" not found.');
+          }
+        }
+
+// update trolie ---------------------------------------------------------------------------
+            function updatetrollie() {
+              // Read raw products JSON string from sessionStorage
+              const raw = sessionStorage.getItem("products");
+              if (!raw) {
+                console.warn("No products found in sessionStorage.");
+                return [];
+              }
+
+              let products;
+              try {
+                products = JSON.parse(raw);
+              } catch (e) {
+                console.error("Failed to parse products from sessionStorage:", e);
+                return [];
+              }
+
+               const trolie = document.getElementById("trolie");
+               trolie.innerHTML="";
+               products.forEach(items => { 
+                  let Price = items.qt *  items.Price 
+                   Price = Price.toFixed(2); 
+                  let Prise = (Price).toLocaleString('en'); 
+                 const add = document.createElement("div");
+                    add.classList.add("item");
+                    //add.innerHTML=`hello`;
+                    //add.innerHTML=`${items.Name},${items.Prise},${items.qt},`;
+                    add.innerHTML=`
+                   <div style="display:flex;gap:5px" >
+                   <img  width="30px" height="30px" src="${items.img}" alt="masculine-welder-k31-replica-watches">
+                   <div id="cartname" class="cartname" >${items.Name}</div> 
+                   </div>
+                   <div style="display:flex;justify-content: end;" >
+                   <button id="add" class="add" onclick="addtocart('${items.Name}','${items.Price}','${items.Pic}')">➕</button> 
+                   <div id="total" style="width: 30px;display: grid;place-items: center;" >${items.qt}</div> 
+                   <button id="minus" class="add" onclick="reduceProductQuantityByName('${items.Name}')" >➖</button> 
+                   <div id="amount" class="amount" >R ${Price} </div> 
+                   <button id="remove" class="add" onclick="removeProductByName('${items.Name}')">❌</button> 
+                   </div>
+                    `;
+                   trolie.appendChild(add);
+                   updateCartTotal();
+                  });
+            }
+
+//remove  product --------------------------------------------------------------
+              function removeProductByName(productName) {
+                const raw = sessionStorage.getItem("products");
+                if (!raw) return;
+
+                let products;
+                try {
+                  products = JSON.parse(raw);
+                } catch (e) {
+                  console.error("Invalid JSON in sessionStorage:", e);
+                  return;
+                }
+
+                // Filter out products with matching name
+                const updated = products.filter(p => p.Name !== productName);
+
+                // Save back to sessionStorage
+                sessionStorage.setItem("products", JSON.stringify(updated));
+              updatetrollie();
+              updateCartTotal()
+              }
+//reduse product --------------------------------------------------
+            function reduceProductQuantityByName(productName) {
+              const raw = sessionStorage.getItem("products");
+              if (!raw) return;
+
+              let products;
+              try {
+                products = JSON.parse(raw);
+              } catch (e) {
+                console.error("Invalid JSON in sessionStorage:", e);
+                return;
+              }
+
+              const updated = products.map(p => {
+                if (p.Name === productName) {
+                  return { ...p, qt: p.qt - 1 };
+                }
+                return p;
+              }).filter(p => p.qt > 0); 
+
+              sessionStorage.setItem("products", JSON.stringify(updated));
+              updatetrollie();
+              updateCartTotal()
+            }
+//add to cart --------------------------------------------------
+            function addtocart(name, price, img) {
+              const raw = sessionStorage.getItem("products");
+              let products = [];
+
+              if (raw) {
+                try {
+                  products = JSON.parse(raw);
+                } catch (e) {
+                  console.error("Invalid JSON in sessionStorage:", e);
+                }
+              }
+
+              // Check if the product already exists (match by name + price)
+              const existing = products.find(p => p.Name === name && p.Price === price);
+
+              if (existing) {
+                existing.qt += 1;
+              } else {
+                products.push({ Name: name, Price: price, img: img, qt: 1 });
+              }
+
+              sessionStorage.setItem("products", JSON.stringify(products));
+              updatetrollie();
+              updateCartTotal()
+            }
